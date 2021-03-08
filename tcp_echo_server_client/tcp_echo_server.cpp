@@ -40,7 +40,7 @@ int main(int argc, char** argv)
     sockaddr_in server_addr;
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(std::atoi(argv[1]));
-    inet_pton(AF_INET, "10.93.13.217", &server_addr.sin_addr);
+    inet_pton(AF_INET, "", &server_addr.sin_addr);
 
     char buf[INET_ADDRSTRLEN];
     //Bind socket
