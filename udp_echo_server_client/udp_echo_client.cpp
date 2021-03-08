@@ -53,7 +53,7 @@ int main(int argc, char** argv) {
     //std::memset((char*)&server_addr, 0, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(port);
-    server_addr.sin_addr.s_addr = inet_addr("10.93.13.217");
+    server_addr.sin_addr.s_addr = inet_addr("");
 
     // Check if there is an address of the host
     if (server->h_addr_list[0])
